@@ -45,3 +45,6 @@
     margin: 5em auto 0em auto;
     text-align: center;
 }
+.past-struct .timeline-controls{
+    display: none;
+}

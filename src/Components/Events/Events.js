@@ -3,9 +3,18 @@ import Records from './Events.json'
 import ListItems from './ListItems';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import { Chrono } from "react-chrono";
 import { useEffect } from 'react';
+import pastEvents from './pastEvents.json'
+
 const Events=()=>{
+    const handleCardClick = (item) => {
+        if (item.url) {
+          // If the item has a URL, open it in a new tab
+          console.log(item.url)
+          window.open(item.url, '_blank');
+        }
+      };
     useEffect(()=>{
         AOS.init({duration:2000})
     },[])
@@ -28,6 +37,19 @@ const Events=()=>{
                 })
             }
         </div>
+        <div className="sub-heading">
+            <h2 data-aos="zoom-out">Past Events</h2>
+        </div>
+        <div className="past-struct">
+           {/* for reference use this:-
+           https://react-chrono.vercel.app/features/slideshow.html */}
+                <Chrono
+            items={pastEvents}
+            mode="VERTICAL_ALTERNATING"
+            cardOnClick={handleCardClick}
+            />
+        </div>
+        
         </>
     );
 }
