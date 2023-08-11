@@ -1,0 +1,71 @@
+@font-face {
+    font-family: Imported;
+    src: url("../../font/SFTransRoboticsExtended.ttf");
+    
+}
+.footer{
+    padding-top: 3em;
+    border-top: 0.05em solid #000;
+    background-color: #000000;
+}
+.footer h2{
+    color: #fff;
+    font-size: 2.5em;
+    font-weight: 700;
+    line-height: 1.2;
+    margin: 0;
+    font-family: Imported;
+    padding: 0;
+    text-align: center;
+}
+
+.footer p{
+    color: #fff;
+    font-size: 1.2em;
+    font-weight: 400;
+    line-height: 1.5;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+.footer .icons{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 1em 0 1em 0;
+}
+.footer .icons a i{
+    list-style: none;
+    margin: 0 1.5em;
+    color: rgb(238, 238, 247);
+    transform: scale(2);
+    transition: all 0.5s ease-in-out ;
+}
+.footer .icons a i:hover{
+    transform: scale(3);
+}
+.footer .icons a #telegram:hover{
+    color: #038ce7;
+}
+.footer .icons a #insta:hover{
+    color: #d1006c;
+}
+.footer .icons a #twitter:hover{
+    color: #14bff3;
+}
+.footer .icons a #linkedin:hover{
+    color: #001bca;
+}
+.footer .copyrights{
+    background-color: black;
+    padding-bottom: 1em;
+}
+.footer .copyrights p a{
+    text-decoration: none;
+    color: #0011ff;
+}
+.footer .copyrights p a:hover{
+
+    text-decoration: underline;
+}

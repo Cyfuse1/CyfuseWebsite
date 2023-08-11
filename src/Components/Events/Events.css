@@ -1,0 +1,47 @@
+@font-face {
+    font-family: Imported;
+    src: url("../../font/SFTransRoboticsExtended.ttf");
+}
+
+
+.events-top{
+    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url("../Images/background2.jpg");
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    position: relative;
+}
+.events-top h1{
+    font-size: 8em;
+}
+@media (max-width:760px) {
+    .events-top h1{
+        font-size: 5em;
+    }
+    
+    
+}
+.sub-heading{
+    color: #fff;
+    font-size: 3em;
+    font-family: Imported;
+    text-align: center;
+    border: 0.01em solid #fff;
+    width: 70%;
+    margin: 1em auto 1em auto;
+    padding: 0.2em;
+}
+@media (max-width:760px) {
+    .sub-heading h2{
+        font-size: 1em;
+    }
+    
+}
+.sessions .box{
+    display: block;
+    width: 90%;
+    margin: 5em auto 0em auto;
+    text-align: center;
+}
