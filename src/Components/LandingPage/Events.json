@@ -1,0 +1,27 @@
+[
+    {
+        "id":"1",
+        "image":"https://i.pinimg.com/736x/75/d9/c6/75d9c6ed7781dec8624417c77b497b1f.jpg",
+        "title":"TECH THUNDER",
+        "description":"Students will be introduced to new gadgets in the robotics and mechatronics world (we   can consider some projects from our institute for that) example- Microcontrollers like Arduino or Raspberry Pi, prototyping tools, Robotics Kits etc. Then students will be given some problem statements to solve within the time limit to come up with innovative solutions through these gadgets and tools. 2 days event - First day introduction and second day brainstorming on problem statement (2 hours intro 1st day + 2 hours brainstorm 2nd day)"
+
+    },
+    {
+        "id":"2",
+        "image":"",
+        "title":"Mecha - human",
+        "description":"This event aims at telling students about our club’s activities, motives and also lays out the blueprint of technical expertise required for transhuman mechatronics. We’ll start with explaining about the brain, neurons, and parallel it with artificial neurons and machine learning. Robotic prosthetics will be shown(virtually/real). It will end with us demonstrating trained neural networks to perform some tasks online"
+    },
+    {
+        "id":"3",
+        "image":"",
+        "title":"Movie Night",
+        "description":"A science fiction movie debate: This event aims to delve into the fascinating concept of the relationship between machines and humans as portrayed in science fiction movies, specifically ethics of cyborgs - humans with robot enhanced parts. Movies that explore such themes will be shown and a debate will commence."
+    },
+    {
+        "id":"4",
+        "image":"",
+        "title":"Robo - Soccer",
+        "description":"This event promotes the use of robot-making interacting with humans. Multiple robots will compete against each other in a 1v1 soccer match. It will be a knockout based tournament. The team members will be able to control their robots."
+    }
+]

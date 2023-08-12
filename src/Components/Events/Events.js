@@ -23,23 +23,11 @@ const Events=()=>{
         <div className="events-top">
             <h1 data-aos="fade-left">Events</h1>
         </div>
-        <div className="sub-heading">
-            <h2 data-aos="zoom-out">Upcoming Events</h2>
-        </div>
-        <div className="sessions">
-            {
-                Records.map(record =>{
-                    return(
-                        <div className="box" data-aos="fade-up" key={record.id}>
-                            <ListItems image={record.image} title={record.title} description={record.description}/>
-                        </div>
-                    )
-                })
-            }
-        </div>
-        <div className="sub-heading">
+        
+        
+        {/* <div className="sub-heading">
             <h2 data-aos="zoom-out">Past Events</h2>
-        </div>
+        </div> */}
         <div className="past-struct">
            {/* for reference use this:-
            https://react-chrono.vercel.app/features/slideshow.html */}
