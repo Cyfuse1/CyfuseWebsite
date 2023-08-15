@@ -43,7 +43,7 @@
     transition: 0.5s ease-in-out;
     cursor: pointer ;
     display: inline-block;
-    font-size: 2em;
+    font-size: 1.5em;
     font-family: Imported;
     margin-top: 1em;
     padding: 0.5em 1em 0.5em 1em;
@@ -55,6 +55,6 @@
 .card .eventdesc p{
     color:#000;
     transition: 0.1s ease-in-out;
-    font-size: 1.2em;
+    font-size: 1.1em;
     padding: 1em 2em 1em 2em;
 }

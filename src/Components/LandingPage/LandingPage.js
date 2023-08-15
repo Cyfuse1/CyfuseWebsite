@@ -32,7 +32,7 @@ const LandingPage=()=>{
                             About
                         </h2>
                         <p>
-                        Our motive is to ignite a profound passion for the cutting-edge technology encompassing Mechatronics and Transhumanism. We are driven by the desire to stay at the forefront of these fields and diligently share our knowledge, thus empowering individuals to explore and embrace the exciting advancements taking place within them.
+                        Our motive is to inspire a passion for the latest technology in the field of Mechatronics and Transhuman. We strive to stay informed and keep everyone updated about the latest advancements in these fields.
                         </p>
                 </div>
                    
@@ -45,7 +45,7 @@ const LandingPage=()=>{
                 Records.map(record =>{
                     return(
                         <div className="box" data-aos="fade-up" key={record.id}>
-                            <ListItems image={record.image} title={record.title} description={record.description}/>
+                            <ListItems image={record.image} title={record.title} description={record.description} date={record.date} />
                         </div>
                     )
                 })

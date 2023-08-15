@@ -20,7 +20,7 @@ export class ListItems extends Component {
     this.setState({ isHovered: false });
   };
   render() {
-    let {image,title,description}=this.props;
+    let {image,title,description,date}=this.props;
     const { isHovered } = this.state;
 
     return (
@@ -30,6 +30,7 @@ export class ListItems extends Component {
             <div className="card-sub">
               <h4>{title}</h4>
               {isHovered && (<div className="eventdesc">
+                  <p>Date : {date}</p>
                   <p>{description}</p>
               </div>)}
             </div>
