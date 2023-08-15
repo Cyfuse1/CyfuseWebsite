@@ -30,7 +30,7 @@ export class ListItems extends Component {
             <div className="card-sub">
               <h4>{title}</h4>
               {isHovered && (<div className="eventdesc">
-                  <p>Date : {date}</p>
+                  <p>{date}</p>
                   <p>{description}</p>
               </div>)}
             </div>
