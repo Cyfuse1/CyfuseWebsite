@@ -1,60 +1,56 @@
 @font-face {
-    font-family: Imported;
-    src: url("../../font/SFTransRoboticsExtended.ttf");
-    
+  font-family: Imported;
+  src: url("../../font/SFTransRoboticsExtended.ttf");
 }
 
-.card{
-    display: flex;
-    border: 0.2em solid black;
-    margin: 2em;
-    padding: 1em;
-    background-color: aliceblue;
-    /* position: relative; */
-
-    
+.card {
+  display: flex;
+  border: 0.2em solid black;
+  margin: 2em;
+  padding: 1em;
+  background-color: aliceblue;
+  /* position: relative; */
 }
 
-.card img{
-    width: 200px;
-    height:140px;
+.card img {
+  width: 200px;
+  height: 140px;
 }
-.card:hover img{
-    width: 240px;
-   height: 220px;
+.card:hover img {
+  width: 240px;
+  height: 220px;
 }
-.card:hover{
-    cursor: pointer;
-    /* transform: scale(1.1); */
-    transition: 1s ease-in-out;
+.card:hover {
+  cursor: pointer;
+  /* transform: scale(1.1); */
+  transition: 1s ease-in-out;
 }
-.card:hover h4{
-    
-    margin-top: 0;
-    transition: 0.5s ease-in-out;
+.card:hover h4 {
+  margin-top: 0;
+  transition: 0.5s ease-in-out;
+}
+.card h4 {
+  color: #fff;
+  width: 70%;
+  background-color: #000;
+  padding: 0.5em;
+  border-radius: 0.5em;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 1.5em;
+  font-family: Imported;
+  font-weight: 100;
 
-} 
-.card  h4{
-    color: #fff;
-    width: 70%;
-    background-color: #000;
-    padding: 0.5em;
-    border-radius: 0.5em;
-    transition: 0.5s ease-in-out;
-    cursor: pointer ;
-    display: inline-block;
-    font-size: 1.5em;
-    font-family: Imported;
-    margin-top: 1em;
-    padding: 0.5em 1em 0.5em 1em;
-   
+  margin-top: 1em;
+  padding: 0.5em 1em 0.5em 1em;
 }
-.card-sub{
-    width: 100%;
+.card-sub {
+  width: 100%;
 }
-.card .eventdesc p{
-    color:#000;
-    transition: 0.1s ease-in-out;
-    font-size: 1.1em;
-    padding: 1em 2em 1em 2em;
+.card .eventdesc p {
+  color: #000;
+  transition: 0.1s ease-in-out;
+  font-size: 1.1em;
+  padding: 1em 2em 1em 2em;
 }

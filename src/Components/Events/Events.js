@@ -12,7 +12,7 @@ const Events=()=>{
         if (item.url) {
           // If the item has a URL, open it in a new tab
           console.log(item.url)
-          window.open(item.url, '_blank');
+          window.open(item.url, '_blank', 'noreferer');
         }
       };
     useEffect(()=>{
