@@ -1,146 +1,141 @@
 @font-face {
-    font-family: Imported;
-    src: url("../../font/SFTransRoboticsExtended.ttf");
+  font-family: Imported;
+  src: url("../../font/SFTransRoboticsExtended.ttf");
 }
 
-
-.team-top{
-    background-image: linear-gradient(rgba(0,0,0,0.9),rgba(0,0,0,0.5)),url("../Images/background3.jpg");
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
-    background-repeat: no-repeat;
-    position: relative;
+.team-top {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("../Images/background3.jpg");
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
 }
 
+.teamMemberscontainer {
+  height: 100%;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  margin: 0;
+  padding: 0;
+  display: grid;
 
-.teamMemberscontainer{
-    height: 100%;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    margin: 0;
-    padding: 0;
-    display: grid;
-
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
+  align-items: center;
+  justify-content: center;
+  color: #ffffff;
 }
-.team-top h1{
-    font-size: 7em;
+.team-top h1 {
+  font-size: 7em;
+  font-weight: 100;
 }
-@media (max-width:1120px) {
-    
-    .team-top h1{
-        font-size: 5em;
-    }
-    
+@media (max-width: 1120px) {
+  .team-top h1 {
+    font-size: 5em;
+    font-weight: 100;
+  }
 }
-.teamMemberscontainer .wrapper{
-    display: grid;
-    grid-template-columns: repeat(4,1fr);
-    column-gap: 1em;
-    row-gap: 3em;
-    /* background-color: #ebe3e3bf; */
-    padding: 2em;
-
-
+.teamMemberscontainer .wrapper {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  column-gap: 1em;
+  row-gap: 3em;
+  /* background-color: #ebe3e3bf; */
+  padding: 2em;
 }
-@media (max-width:1000px) {
-    .teamMemberscontainer .wrapper{
-        grid-template-columns: repeat(3,1fr);
-    }
-    
+@media (max-width: 1000px) {
+  .teamMemberscontainer .wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
 }
-@media (max-width:740px) {
-    .teamMemberscontainer .wrapper{
-        grid-template-columns: repeat(2,1fr);
-    }
-    
+@media (max-width: 740px) {
+  .teamMemberscontainer .wrapper {
+    grid-template-columns: repeat(2, 1fr);
+  }
 }
-@media (max-width:475px) {
-    .teamMemberscontainer .wrapper{
-        grid-template-columns: repeat(1,1fr);
-    }
-    
+@media (max-width: 475px) {
+  .teamMemberscontainer .wrapper {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
-.teamMemberscontainer .box{
-    background: linear-gradient(360deg,#2926265b 0%,#151717 0%,#080a07 100%);
-    overflow: hidden;
-    border: 2px solid black;
-    border-radius: 2em;
-    box-sizing: border-box;
-    /* box-shadow: 2px 2px 2px 2px; */
-    margin: 15px;
-    position: relative;
-    height: calc(230px - 20px);
-    width: calc(230px - 20px);
-    transition: height,width 0.5s linear;
-    
+.teamMemberscontainer .box {
+  background: linear-gradient(360deg, #2926265b 0%, #151717 0%, #080a07 100%);
+  overflow: hidden;
+  border: 2px solid black;
+  border-radius: 2em;
+  box-sizing: border-box;
+  /* box-shadow: 2px 2px 2px 2px; */
+  margin: 15px;
+  position: relative;
+  height: calc(230px - 20px);
+  width: calc(230px - 20px);
+  transition: height, width 0.5s linear;
 }
 
-.teamMemberscontainer .img-area{
-    position: absolute;
-    top: 0;
-    left: 0;
-    height: 100%;
-    width: 100%;
-    z-index: 1;
-    -webkit-background-size:cover;
-    background-size: cover;
-    background-position: center center;
-    transition: all 0.5s ease-in;
+.teamMemberscontainer .img-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: 1;
+  -webkit-background-size: cover;
+  background-size: cover;
+  background-position: center center;
+  transition: all 0.5s ease-in;
 }
-.teamMemberscontainer .box:hover  .img-area{
-    border-radius: 50%;
-    height: 40%;
-    width: 40%;
-    left: 30%;
-    top: 20px;
+.teamMemberscontainer .box:hover .img-area {
+  border-radius: 50%;
+  height: 40%;
+  width: 40%;
+  left: 30%;
+  top: 20px;
 }
 
-.teamMemberscontainer .content{
-    position: absolute;
-    width: 100%;
-    top: 100%;
-    height: calc(100% - 100px);
-    padding: 1.5em 0;
-    text-align: center;
-    box-sizing: border-box;
-    transition: all 0.5s ease-in;
-    opacity: 0;
+.teamMemberscontainer .content {
+  position: absolute;
+  width: 100%;
+  top: 100%;
+  height: calc(100% - 100px);
+  padding: 1.5em 0;
+  text-align: center;
+  box-sizing: border-box;
+  transition: all 0.5s ease-in;
+  opacity: 0;
 }
-.teamMemberscontainer .box:hover .content{
-    top: 100px;
-    opacity: 1;
+.teamMemberscontainer .box:hover .content {
+  top: 100px;
+  opacity: 1;
 }
-.teamMemberscontainer .content h3{
-    margin: 10px 0 10px 0;
-    padding: 0;
-    font-size: 1.5rem;
-}
-.teamMemberscontainer .content p{
-    margin: 0;
-    padding: 0;
-}
-.teamMemberscontainer .content .mem-icons{
-    display: flex;
-    justify-content:center;
-}
-.teamMemberscontainer .content .mem-icons i{
-    margin: 1em;
-    color: #ffffff;
-}
-.teamMemberscontainer .content .mem-icons #insta:hover{
-    margin: 1em;
-    color: #d1006c;
-}
-.teamMemberscontainer .content .mem-icons #linkedin:hover{
-    margin: 1em;
-    color: #001bca;
-}
-.teamMemberscontainer .content .mem-icons i:hover{
-    transform: scale(1.6);
-    transition: all 0.2s ease-in;
+.teamMemberscontainer .content h3 {
+  margin: 10px 0 10px 0;
+  padding: 0;
+  font-size: 1.5rem;
+  font-weight: 100;
 
+}
+.teamMemberscontainer .content p {
+  margin: 0;
+  padding: 0;
+}
+.teamMemberscontainer .content .mem-icons {
+  display: flex;
+  justify-content: center;
+}
+.teamMemberscontainer .content .mem-icons i {
+  margin: 1em;
+  color: #ffffff;
+}
+.teamMemberscontainer .content .mem-icons #insta:hover {
+  margin: 1em;
+  color: #d1006c;
+}
+.teamMemberscontainer .content .mem-icons #linkedin:hover {
+  margin: 1em;
+  color: #001bca;
+}
+.teamMemberscontainer .content .mem-icons i:hover {
+  transform: scale(1.6);
+  transition: all 0.2s ease-in;
 }
