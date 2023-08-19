@@ -18,6 +18,9 @@
 .card img{
     width: 200px;
     height:140px;
+    transition: all 1s ease-in-out;
+
+
 }
 .card:hover img{
     width: 240px;
