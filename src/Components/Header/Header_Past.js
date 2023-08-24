@@ -28,47 +28,33 @@ const Header = (props) => {
     };
   }, []);
 
-  useEffect(() => {
-    const currentPath = location.pathname;
-    if (currentPath === "/") {
-      setSelectedOption("option1");
-    } else if (currentPath === "/about") {
-      setSelectedOption("option2");
-    } else if (currentPath === "/events") {
-      setSelectedOption("option3");
-    } else if (currentPath === "/Gallery") {
-      setSelectedOption("option4");
-    }
-  }, [location]);
+  
   return (
     <div className={!isNavbarVisible ? "header" : "header header-active"}>
       <ul className="nav">
-        <li className="item " onClick={() => handleOptionClick("option1")}>
-          <Link
-            to="/"
+        <li className="item " >
+          <HashLink
+            smooth
+            to="/PastEvents/mela#mela_home"
             className={selectedOption === "option1" ? "selected" : ""}
             id="home1"
           >
             <i className="fa-solid fa-house"></i> Home
-          </Link>
+          </HashLink>
         </li>
-        <li className="item" onClick={() => handleOptionClick("option2")}>
-          <Link
-            to="/about"
+        <li className="item" >
+          <HashLink
+            smooth
+            to="/PastEvents/mela#mela_about"
             className={selectedOption === "option2" ? "selected" : ""}
           >
             <i className="fa-solid fa-circle-info"></i> About
-          </Link>
+          </HashLink>
         </li>
-        <li className="item" onClick={() => handleOptionClick("option3")}>
-          <Link
-            to="/events"
-            className={selectedOption === "option3" ? "selected" : ""}
-          >
-            <i className="fa-regular fa-calendar-days"></i> Events
-          </Link>
+        <li className="item">
+          
         </li>
-        <li className="item" onClick={() => handleOptionClick("option4")}>
+        <li className="item" >
           <HashLink
             smooth
             to="/PastEvents/mela#gallery"

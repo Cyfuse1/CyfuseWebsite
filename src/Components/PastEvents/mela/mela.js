@@ -9,19 +9,23 @@ import ImageCarousel from "../carousels";
   import p2 from "./images/IMG_20230806_121447.jpg";
   import p3 from "./images/IMG-20230806-WA0023.jpg";
   import p4   from "./images/IMG-20230806-WA0024.jpg";
+  import p5   from "./images/20230806_140816.jpg";
+  import p6   from "./images/IMG_20230806_131646.jpg";
+  import p7   from "./images/1692466319017.jpg";
+  
 
 //
-const images = [p1, p2, p3,p4];
+const images = [p1, p2, p3,p4,p5,p6,p7];
 const Mela = () => {
   useEffect(() => {
     AOS.init({ duration: 2500 });
   }, []);
   return (
     <>
-      <div className="mela_head">
+      <div className="mela_head" id="mela_home">
         <h1 data-aos="fade-left">Club Mela</h1>
       </div>
-      <div className="mela_body" >
+      <div className="mela_body" id="mela_about">
         <h2 data-aos="fade-right"> About Event</h2>
       </div>
 

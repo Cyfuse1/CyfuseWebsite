@@ -12,18 +12,12 @@
   /* position: relative; */
 }
 
-<<<<<<< HEAD
 .card img{
     width: 200px;
     height:140px;
     transition: all 1s ease-in-out;
 
 
-=======
-.card img {
-  width: 200px;
-  height: 140px;
->>>>>>> 491f0797ffd23617ea452739a9d49fb141c08dae
 }
 .card:hover img {
   width: 240px;
