@@ -1,0 +1,52 @@
+@font-face {
+  font-family: Imported;
+  src: url("../../../font/SFTransRoboticsExtended.ttf");
+}
+
+.mela_head {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.5)),
+    url("../../Images/backgroundmela.jpg");
+  height: 60vh;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.mela_head h1 {
+  font-size: 6em;
+  font-weight: 100;
+} /* Change the color of the dots */
+.mela_body h2{
+    font-size: 3em;
+    font-family: Imported;
+    color: #f1f1f1;
+    text-align: center;
+    margin-top: 5%;
+    margin-bottom: 5%;
+    font-weight: 100;
+}
+
+@media (max-width: 760px) {
+  .media_head h1 {
+    font-size: 4em;
+  }
+}
+.mela_carousel{
+    margin-top: 7%;
+    margin-bottom: 5%;
+}
+.about p {
+    display: flex;
+    text-align: justify;
+    justify-content: center;
+    color: #fff;
+    padding: 3% ;
+    margin-left: 5%;
+    margin-right: 5%;
+    font-size:1.4em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 2em auto 2em auto;
+    font-weight: 100;
+  }
+  
