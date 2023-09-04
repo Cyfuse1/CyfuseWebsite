@@ -9,7 +9,7 @@
     },
     {
         "id":"2",
-        "image":"",
+        "image":"/EventImages/mech.jpg",
         "title":"Mecha - human",
         "description":"This event aims at telling students about our club’s activities, motives and also lays out the blueprint of technical expertise required for transhuman mechatronics. We’ll start with explaining about the brain, neurons, and parallel it with artificial neurons and machine learning. Robotic prosthetics will be shown(virtually/real). It will end with us demonstrating trained neural networks to perform some tasks online"
     },
