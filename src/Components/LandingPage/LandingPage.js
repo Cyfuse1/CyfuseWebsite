@@ -1,6 +1,8 @@
 import './LandingPage.css'
 import React, { useEffect } from 'react';
 import Records from './Events.json'
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 import AOS from 'aos';
 import 'aos/dist/aos.css';

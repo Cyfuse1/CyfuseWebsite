@@ -1,6 +1,8 @@
 import './AboutUS.css';
 import AOS from 'aos';
 import 'aos/dist/aos.css';
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 import { useEffect } from 'react';
 

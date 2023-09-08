@@ -3,7 +3,8 @@ import './Team.css'
 import membersList from './membersList.json'
 import AOS from 'aos';
 import 'aos/dist/aos.css';
-
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 import { useEffect } from 'react';
 
 
@@ -13,6 +14,7 @@ const Team=()=>{
     },[])
     return(
         <>
+        
         <div className="team-top">
             <h1 data-aos="fade-left">Meet the Team</h1>
         </div>

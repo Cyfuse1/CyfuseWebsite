@@ -6,6 +6,8 @@ import 'aos/dist/aos.css';
 import { Chrono } from "react-chrono";
 import { useEffect } from 'react';
 import pastEvents from './pastEvents.json'
+import Header from '../Header/Header';
+import Footer from '../Footer/Footer';
 
 const Events=()=>{
     const handleCardClick = (item) => {
