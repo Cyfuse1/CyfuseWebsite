@@ -6,7 +6,7 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Header_Past from "./Components/Header/Header_Past";
 import AboutUS from "./Components/AboutUs/AboutUS";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Events from "./Components/Events/Events";
 import Team from "./Components/Team/Team";
 import Mela from "./Components/PastEvents/mela/mela";
@@ -16,49 +16,18 @@ import IntroEvent from "./Components/PastEvents/introEvent/IntroEvent";
 function App() {
   return (
     <>
+    <Header/>
       <Router>
         <Routes>
-          <Route
-            exact
-            path="/PastEvents/mela"
-            element={
-              <>
-              
-                <Header_Past />
-                <Mela />
-                <Footer />
-              </>
-            }
-          />
-          <Route
-            exact
-            path="/PastEvents/introEvent"
-            element={
-              <>
-                <Intro_header />
-                <IntroEvent />
-                <Footer />
-              </>
-            }
-          />
-         
-          <Route
-            path="*"
-            element={
-              <>
-                <Header />
-                <Routes>
-                  <Route exact path="/" element={<LandingPage />} />
-                  <Route exact path="/about" element={<AboutUS />} />
-                  <Route exact path="/events" element={<Events />} />
-                  <Route exact path="/team" element={<Team />} />
-                </Routes>
-                <Footer />
-              </>
-            }
-          />
-        </Routes>
+          <Route exact path="/PastEvents/mela" element={ <Mela /> }/>
+          <Route exact path="/PastEvents/introEvent" element={<IntroEvent />  } />
+          <Route exact path="/" element={<LandingPage />} />
+          <Route exact path="/about" element={<AboutUS />} />
+          <Route exact path="/events" element={<Events />} />
+          <Route exact path="/team" element={<Team />} />
+          </Routes> 
       </Router>
+    <Footer/>
     </>
   );
 }
