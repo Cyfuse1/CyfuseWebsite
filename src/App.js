@@ -6,7 +6,7 @@ import Footer from "./Components/Footer/Footer";
 import Header from "./Components/Header/Header";
 import Header_Past from "./Components/Header/Header_Past";
 import AboutUS from "./Components/AboutUs/AboutUS";
-import { BrowserRouter as Router, Routes, Route, Link } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import Events from "./Components/Events/Events";
 import Team from "./Components/Team/Team";
 import Mela from "./Components/PastEvents/mela/mela";
