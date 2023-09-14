@@ -15,13 +15,15 @@ const LandingPage=()=>{
 
    const customContent = [
     <div>
-      <p>Smart India Hackathon is the world's biggest open platform for the innovators or entrepreneurs of tomorrow to start today towards a smarter India. A total of 239 problem statements under 26 themes are presented. These problems have been posed by the state governments, the central ministry, the industry personnel and for student innovation.<br></br>
+      <p>Smart India Hackathon is the world's biggest open platform for the innovators or entrepreneurs of tomorrow to start today towards a smarter India. A total of 239 problem statements under 26 themes are presented. These problems have been posed by the state governments, the central ministry, the industry personnel and for student innovation.We will be having a shortlisting round at our college IIITD on 20th September 2023 and shortlisted teams will be selected and will be sent to next national round.<br></br>
       
 
-      <a href='https://forms.gle/HdoHeETczgYdiixS9'>click here</a> to register<br></br>
+      <a href='https://forms.gle/HdoHeETczgYdiixS9' target='_blank'>click here</a> to register<br></br>
       For more details visit : <></>
         <a href='https://www.sih.gov.in/' target='_blank'>sih.gov.in</a><br></br>
-        Team size : 6 (including atleast 1 female participant) 
+        Team size : 6 (including atleast 1 female participant) <br></br>
+        Time : 6pm-10pm<br></br>
+        Venue : C201, C101 LHC
        
      
         </p>
