@@ -1,10 +1,10 @@
-import { Link} from "react-router-dom";
+import { Link,useLocation } from "react-router-dom";
 import './Header.css'
 import React, { useState, useEffect } from 'react';
 const Header=(props)=>{
     const [isNavbarVisible, setIsNavbarVisible] = useState(false);
     const [selectedOption, setSelectedOption] = useState("");
-
+    const location = useLocation();
 
     const handleOptionClick = (option) => {
       setSelectedOption(option);
@@ -27,18 +27,29 @@ const Header=(props)=>{
       
     }, []);
 
+    useEffect(() => {
+      const currentPath = location.pathname;
+      if (currentPath === '/') {
+        setSelectedOption('option1');
+      } else if (currentPath === '/about') {
+        setSelectedOption('option2');
+      } else if (currentPath === '/events') {
+        setSelectedOption('option3');
+      } else if (currentPath === '/team') {
+        setSelectedOption('option4');
+      }
+    }, [location]);
     return(
       
         
-        <div className={!isNavbarVisible?"header":"header header-active"}>
-        <ul className="nav">
-       <li className="item "  onClick={() => handleOptionClick('option1')}><Link to={"/"} className={selectedOption === 'option1' ? 'selected' : '' } id="home1"><i className="fa-solid fa-house"></i>  Home</Link></li>
-       <li className="item" onClick={() => handleOptionClick('option2')}><Link to={"/about"} className={selectedOption === 'option2' ? 'selected' : ''}><i className="fa-solid fa-circle-info"></i>  About</Link></li>
-       <li className="item" onClick={() => handleOptionClick('option3')}><Link to={"/events"} className={selectedOption === 'option3' ? 'selected' : ''}><i className="fa-regular fa-calendar-days"></i>  Events</Link></li>
-       <li className="item" onClick={() => handleOptionClick('option4')}><Link to={"/team"} className={selectedOption === 'option4' ? 'selected' : ''}><i className="fa-solid fa-user-group"></i>  Members</Link></li>
+            <div className={!isNavbarVisible?"header":"header header-active"}>
+            <ul className="nav">
+       <li className="item "  onClick={() => handleOptionClick('option1')}><Link to="/" className={selectedOption === 'option1' ? 'selected' : '' } id="home1"><i className="fa-solid fa-house"></i>  Home</Link></li>
+       <li className="item" onClick={() => handleOptionClick('option2')}><Link to="/about" className={selectedOption === 'option2' ? 'selected' : ''}><i className="fa-solid fa-circle-info"></i>  About</Link></li>
+       <li className="item" onClick={() => handleOptionClick('option3')}><Link to="/events" className={selectedOption === 'option3' ? 'selected' : ''}><i className="fa-regular fa-calendar-days"></i>  Events</Link></li>
+       <li className="item" onClick={() => handleOptionClick('option4')}><Link to="/team" className={selectedOption === 'option4' ? 'selected' : ''}><i className="fa-solid fa-user-group"></i>  Members</Link></li>
        </ul>
        </div>
-      // <h1> Header here</h1>
        
     );
 }

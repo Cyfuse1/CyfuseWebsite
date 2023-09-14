@@ -10,11 +10,17 @@ import Header from '../Header/Header';
 import Footer from '../Footer/Footer';
 
 const Events=()=>{
+    console.log("running events");
     const handleCardClick = (item) => {
+        
         if (item.url) {
           // If the item has a URL, open it in a new tab
           console.log(item.url)
-          window.open(item.url, '_blank', 'noreferer');
+        //   window.location.href = item.url;
+          window.open(item.url, '_self');
+        }
+        else{
+            console.log("no url");
         }
       };
     useEffect(()=>{
@@ -37,8 +43,10 @@ const Events=()=>{
             items={pastEvents}
             mode="VERTICAL_ALTERNATING"
             cardOnClick={handleCardClick}
+            
             />
         </div>
+
         
         </>
     );
